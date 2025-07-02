@@ -25,9 +25,9 @@ const AffirmationCalendar = () => {
     }
   }, [selectedDate])
 
-  const loadSavedDates = async () => {
+const loadSavedDates = async () => {
     try {
-      const saved = await savedAffirmationService.getSavedAffirmations()
+      const saved = await savedAffirmationService.getAll()
       const dates = saved.map(item => new Date(item.savedAt))
       setSavedDates(dates)
     } catch (err) {
