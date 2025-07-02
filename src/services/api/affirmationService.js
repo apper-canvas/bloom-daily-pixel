@@ -1,91 +1,80 @@
-import affirmationsData from '@/services/mockData/affirmations.json'
+import affirmationsData from "@/services/mockData/affirmations.json";
+
+// Utility function to simulate API delay
+const delay = (ms = 300) => new Promise(resolve => setTimeout(resolve, ms));
 
 class AffirmationService {
   constructor() {
-    this.affirmations = [...affirmationsData]
-  }
-
-  // Simulate API delay
-  delay(ms = 300) {
-    return new Promise(resolve => setTimeout(resolve, ms))
+    this.affirmations = [...affirmationsData];
   }
 
   async getAll() {
-    await this.delay()
-    return [...this.affirmations]
+    await delay();
+    return [...this.affirmations];
+  }
+
+  // Alias for backward compatibility
+  async getAllAffirmations() {
+    return this.getAll();
   }
 
   async getById(id) {
-    await this.delay()
-    return this.affirmations.find(affirmation => affirmation.Id === parseInt(id))
+    await delay();
+    return this.affirmations.find(affirmation => affirmation.id === id);
   }
 
-async getTodayAffirmation() {
-    await this.delay()
-    // Get today's date and use it to select a consistent affirmation for the day
-    const today = new Date()
-    const dayOfYear = Math.floor((today - new Date(today.getFullYear(), 0, 0)) / 1000 / 60 / 60 / 24)
-    const index = dayOfYear % this.affirmations.length
-    return { ...this.affirmations[index] }
+  async getTodayAffirmation() {
+    await delay();
+    const randomIndex = Math.floor(Math.random() * this.affirmations.length);
+    return this.affirmations[randomIndex];
   }
 
   async getByDate(date) {
-    await this.delay()
-    // Get affirmation for specific date using same logic as getTodayAffirmation
-    const targetDate = new Date(date)
-    const dayOfYear = Math.floor((targetDate - new Date(targetDate.getFullYear(), 0, 0)) / 1000 / 60 / 60 / 24)
-    const index = dayOfYear % this.affirmations.length
-    return { ...this.affirmations[index] }
+    await delay();
+    // For demo purposes, return random affirmations for any date
+    // In a real app, you'd filter by actual date
+    const randomAffirmations = [...this.affirmations]
+      .sort(() => 0.5 - Math.random())
+      .slice(0, 3);
+    return randomAffirmations;
   }
 
   async getDateRange(startDate, endDate) {
-    await this.delay()
-    const results = []
-    const start = new Date(startDate)
-    const end = new Date(endDate)
-    
-    for (let date = new Date(start); date <= end; date.setDate(date.getDate() + 1)) {
-      const dayOfYear = Math.floor((date - new Date(date.getFullYear(), 0, 0)) / 1000 / 60 / 60 / 24)
-      const index = dayOfYear % this.affirmations.length
-      results.push({
-        date: new Date(date).toISOString().split('T')[0],
-        affirmation: { ...this.affirmations[index] }
-      })
-    }
-    
-    return results
+    await delay();
+    // For demo purposes, return some affirmations
+    return this.affirmations.slice(0, 10);
   }
 
   async create(affirmation) {
-    await this.delay()
-    const maxId = Math.max(...this.affirmations.map(a => a.Id), 0)
+    await delay();
     const newAffirmation = {
       ...affirmation,
-      Id: maxId + 1
-    }
-    this.affirmations.push(newAffirmation)
-    return { ...newAffirmation }
+      id: Date.now().toString(),
+      createdAt: new Date().toISOString()
+    };
+    this.affirmations.push(newAffirmation);
+    return newAffirmation;
   }
 
   async update(id, updatedData) {
-    await this.delay()
-    const index = this.affirmations.findIndex(affirmation => affirmation.Id === parseInt(id))
-    if (index === -1) {
-      throw new Error('Affirmation not found')
+    await delay();
+    const index = this.affirmations.findIndex(affirmation => affirmation.id === id);
+    if (index !== -1) {
+      this.affirmations[index] = { ...this.affirmations[index], ...updatedData };
+      return this.affirmations[index];
     }
-    this.affirmations[index] = { ...this.affirmations[index], ...updatedData }
-    return { ...this.affirmations[index] }
+    throw new Error('Affirmation not found');
   }
 
   async delete(id) {
-    await this.delay()
-    const index = this.affirmations.findIndex(affirmation => affirmation.Id === parseInt(id))
-    if (index === -1) {
-      throw new Error('Affirmation not found')
+    await delay();
+    const index = this.affirmations.findIndex(affirmation => affirmation.id === id);
+    if (index !== -1) {
+      const deleted = this.affirmations.splice(index, 1)[0];
+      return deleted;
     }
-    const deleted = this.affirmations.splice(index, 1)
-    return deleted[0]
+    throw new Error('Affirmation not found');
   }
 }
 
-export const affirmationService = new AffirmationService()
+export const affirmationService = new AffirmationService();
