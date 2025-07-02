@@ -1,0 +1,212 @@
+[
+  {
+    "Id": 1,
+    "text": "I am worthy of love, success, and happiness in all areas of my life",
+    "author": "Louise Hay",
+    "category": "self-worth",
+    "date": "2024-01-01"
+  },
+  {
+    "Id": 2,
+    "text": "Every challenge I face is an opportunity to grow stronger and wiser",
+    "author": "Tony Robbins",
+    "category": "growth",
+    "date": "2024-01-02"
+  },
+  {
+    "Id": 3,
+    "text": "I trust in my ability to navigate through life's uncertainties with grace",
+    "author": "Deepak Chopra",
+    "category": "trust",
+    "date": "2024-01-03"
+  },
+  {
+    "Id": 4,
+    "text": "My thoughts create my reality, and I choose to think positively",
+    "author": "Wayne Dyer",
+    "category": "mindset",
+    "date": "2024-01-04"
+  },
+  {
+    "Id": 5,
+    "text": "I am grateful for this moment and all the possibilities it holds",
+    "author": "Eckhart Tolle",
+    "category": "gratitude",
+    "date": "2024-01-05"
+  },
+  {
+    "Id": 6,
+    "text": "I have the power to create positive change in my life and the world",
+    "author": "Maya Angelou",
+    "category": "empowerment",
+    "date": "2024-01-06"
+  },
+  {
+    "Id": 7,
+    "text": "I release what no longer serves me and welcome new opportunities",
+    "author": "Marianne Williamson",
+    "category": "letting-go",
+    "date": "2024-01-07"
+  },
+  {
+    "Id": 8,
+    "text": "My inner peace is my greatest strength and sanctuary",
+    "author": "Thich Nhat Hanh",
+    "category": "peace",
+    "date": "2024-01-08"
+  },
+  {
+    "Id": 9,
+    "text": "I am exactly where I need to be on my unique journey of growth",
+    "author": "Paulo Coelho",
+    "category": "acceptance",
+    "date": "2024-01-09"
+  },
+  {
+    "Id": 10,
+    "text": "I choose courage over comfort and embrace new adventures",
+    "author": "Brené Brown",
+    "category": "courage",
+    "date": "2024-01-10"
+  },
+  {
+    "Id": 11,
+    "text": "My authentic self is my greatest gift to the world",
+    "author": "Oprah Winfrey",
+    "category": "authenticity",
+    "date": "2024-01-11"
+  },
+  {
+    "Id": 12,
+    "text": "I radiate love, kindness, and compassion wherever I go",
+    "author": "Dalai Lama",
+    "category": "love",
+    "date": "2024-01-12"
+  },
+  {
+    "Id": 13,
+    "text": "Every breath I take fills me with energy and vitality",
+    "author": "Paramahansa Yogananda",
+    "category": "vitality",
+    "date": "2024-01-13"
+  },
+  {
+    "Id": 14,
+    "text": "I am resilient, adaptable, and capable of overcoming any obstacle",
+    "author": "Nelson Mandela",
+    "category": "resilience",
+    "date": "2024-01-14"
+  },
+  {
+    "Id": 15,
+    "text": "My dreams are valid and I have the power to make them reality",
+    "author": "Les Brown",
+    "category": "dreams",
+    "date": "2024-01-15"
+  },
+  {
+    "Id": 16,
+    "text": "I attract abundance and prosperity in all forms into my life",
+    "author": "Napoleon Hill",
+    "category": "abundance",
+    "date": "2024-01-16"
+  },
+  {
+    "Id": 17,
+    "text": "I am surrounded by love and everything is working out for my highest good",
+    "author": "Gabrielle Bernstein",
+    "category": "faith",
+    "date": "2024-01-17"
+  },
+  {
+    "Id": 18,
+    "text": "I forgive myself and others, freeing my heart to love fully",
+    "author": "Byron Katie",
+    "category": "forgiveness",
+    "date": "2024-01-18"
+  },
+  {
+    "Id": 19,
+    "text": "My potential is limitless and I am constantly evolving",
+    "author": "Jim Rohn",
+    "category": "potential",
+    "date": "2024-01-19"
+  },
+  {
+    "Id": 20,
+    "text": "I celebrate my uniqueness and honor my individual path",
+    "author": "Rumi",
+    "category": "individuality",
+    "date": "2024-01-20"
+  },
+  {
+    "Id": 21,
+    "text": "I am a magnet for miracles and wonderful surprises",
+    "author": "Abraham Hicks",
+    "category": "miracles",
+    "date": "2024-01-21"
+  },
+  {
+    "Id": 22,
+    "text": "My body is healthy, my mind is clear, and my spirit is joyful",
+    "author": "Christiane Northrup",
+    "category": "wellness",
+    "date": "2024-01-22"
+  },
+  {
+    "Id": 23,
+    "text": "I trust the timing of my life and remain patient with the process",
+    "author": "Rumi",
+    "category": "timing",
+    "date": "2024-01-23"
+  },
+  {
+    "Id": 24,
+    "text": "I am creative, inspired, and express my gifts freely",
+    "author": "Julia Cameron",
+    "category": "creativity",
+    "date": "2024-01-24"
+  },
+  {
+    "Id": 25,
+    "text": "Every day brings new opportunities for joy and discovery",
+    "author": "Richard Branson",
+    "category": "opportunity",
+    "date": "2024-01-25"
+  },
+  {
+    "Id": 26,
+    "text": "I am connected to the infinite wisdom and love of the universe",
+    "author": "Deepak Chopra",
+    "category": "connection",
+    "date": "2024-01-26"
+  },
+  {
+    "Id": 27,
+    "text": "My words have power and I speak with intention and kindness",
+    "author": "Don Miguel Ruiz",
+    "category": "communication",
+    "date": "2024-01-27"
+  },
+  {
+    "Id": 28,
+    "text": "I am patient with myself as I learn and grow each day",
+    "author": "Kristin Neff",
+    "category": "self-compassion",
+    "date": "2024-01-28"
+  },
+  {
+    "Id": 29,
+    "text": "I embrace uncertainty as a pathway to infinite possibilities",
+    "author": "Deepak Chopra",
+    "category": "uncertainty",
+    "date": "2024-01-29"
+  },
+  {
+    "Id": 30,
+    "text": "My presence brings light and positivity to everyone I meet",
+    "author": "Maya Angelou",
+    "category": "presence",
+    "date": "2024-01-30"
+  }
+]
