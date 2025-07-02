@@ -3,6 +3,7 @@ import { toast } from 'react-toastify'
 import NavigationTabs from '@/components/molecules/NavigationTabs'
 import AffirmationCard from '@/components/organisms/AffirmationCard'
 import FavoritesGrid from '@/components/organisms/FavoritesGrid'
+import AffirmationCalendar from '@/components/organisms/AffirmationCalendar'
 import Loading from '@/components/ui/Loading'
 import Error from '@/components/ui/Error'
 import { affirmationService } from '@/services/api/affirmationService'
@@ -122,10 +123,17 @@ const HomePage = () => {
         />
       )}
 
-      {activeTab === 'favorites' && (
+{activeTab === 'favorites' && (
         <FavoritesGrid
           favorites={favorites}
           onRemoveFavorite={handleRemoveFavorite}
+        />
+      )}
+
+      {activeTab === 'calendar' && (
+        <AffirmationCalendar
+          savedAffirmationIds={savedAffirmationIds}
+          onSaveAffirmation={handleSaveAffirmation}
         />
       )}
     </div>

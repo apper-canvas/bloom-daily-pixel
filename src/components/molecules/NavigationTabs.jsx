@@ -5,7 +5,8 @@ import ApperIcon from '@/components/ApperIcon'
 const NavigationTabs = ({ activeTab, onTabChange }) => {
   const tabs = [
     { id: 'today', label: 'Today', icon: 'Sun' },
-    { id: 'favorites', label: 'Favorites', icon: 'Heart' }
+    { id: 'favorites', label: 'Favorites', icon: 'Heart' },
+    { id: 'calendar', label: 'Calendar', icon: 'Calendar' }
   ]
 
   return (
