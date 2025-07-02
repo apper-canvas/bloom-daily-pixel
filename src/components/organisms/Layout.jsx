@@ -30,10 +30,10 @@ const Layout = ({ children }) => {
         className="relative z-10 py-8 px-4 text-center"
         initial={{ opacity: 0, y: -20 }}
         animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.6, ease: "easeOut" }}
+transition={{ duration: 0.6, ease: "easeOut" }}
       >
         <h1 className="font-display text-4xl sm:text-5xl lg:text-6xl font-bold bg-gradient-to-r from-primary-600 via-secondary-500 to-primary-700 bg-clip-text text-transparent">
-          Bloom Daily
+          Daily Bloom
         </h1>
         <p className="mt-2 text-lg text-gray-600 font-medium">
           Nurture your mind with daily affirmations
